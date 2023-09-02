@@ -179,9 +179,49 @@
         }
     }
 
-/* Aplicar animación de vibración al hacer hover sobre las ofertas */
+    /* Aplicar animación de vibración al hacer hover sobre las ofertas */
     .oferta:hover {
         animation: vibrar 0.3s ;    
+    }
+    /* Estilos para el footer */
+    .modern-footer {
+        background-color: var(--color-accent);
+        opacity: .8;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-info, .social-links {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .contact-info h3, .social-links h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info p, .social-links a {
+        font-size: 1rem;
+        margin: 5px 0;
+    }
+
+    .contact-info i, .social-links i {
+        margin-right: 5px;
+    }
+
+    .social-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .social-links a:hover {
+        text-decoration: underline;
     }
 
 
