@@ -81,32 +81,37 @@
     }
 
     /* Estilos para la sección de ofertas */
-    .ofertas {
+    .offerts {
         text-align: center;
         margin-top: 20px;
     }
 
-    .oferta {
-        background-color: var(--color-primary);
-        color: var(--color-background);
+    .offert {
+        /*background-color: var(--color-primary);
+        */background: rgb(23,70,162);
+        background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 35%, var(--color-background) 100%);
+        color: var(--color-primary);
+        animation: cambiaColor 3s linear infinite alternate;
         padding: 20px;
         margin: 20px;
         border-radius: 10px;
         display: inline-block;
-        width: calc(33.33% - 40px); /* Para que haya 3 columnas en pantalla grande */
-    }
+        width: calc(33.33% - 40px);
+        /*Paraquehaya3columnasenpantallagrande*/opacity: .8;
+        -webkit-animation: cambiaColor 3s linear infinite alternate;
+}
 
-    .oferta h3 {
+    .offert h3 {
         font-size: 1.5rem;
         margin: 10px 0;
     }
 
-    .oferta p {
+    .offert p {
         font-size: 1rem;
         margin: 10px 0;
     }
 
-    .oferta a {
+    .offert a {
         color: var(--color-accent);
         text-decoration: none;
         font-weight: bold;
@@ -119,74 +124,42 @@
     }
 
     /* Estilos para la sección de ofertas */
-    .ofertas {
+    .offerts {
         text-align: center;
         margin-top: 20px;
     }
 
-    .oferta {
-        background-color: var(--color-primary);
-        color: var(--color-background);
-        padding: 20px;
-        margin: 20px;
-        border-radius: 10px;
-        display: inline-block;
-        width: calc(33.33% - 40px); /* Para que haya 3 columnas en pantalla grande */
-    }
+   
 
-    .oferta img {
+    .offert img {
         max-width: 100%; /* Ajusta el ancho máximo al 100% para que todas las imágenes se redimensionen automáticamente */
         height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
         width: 100%; /* Añade esto para asegurarte de que el ancho sea del 100% del contenedor */
         max-height: 200px; /* Establece la altura máxima deseada en píxeles */
     }
 
-    .oferta h3 {
-        font-size: 1.5rem;
-        margin: 10px 0;
-    }
-
-    .oferta p {
-        font-size: 1rem;
-        margin: 10px 0;
-    }
-
-    .oferta a {
-        color: var(--color-accent);
-        text-decoration: none;
-        font-weight: bol
-    }
-
-    /* Animación de vibración */
-    @keyframes vibrar {
+    @keyframes cambiaColor {
         0% {
-            transform: translateX(0);
+          color: var(--color-primary);
         }
-        20% {
-            transform: translateX(-5px);
-        }
-        40% {
-            transform: translateX(5px);
-        }
-        60% {
-            transform: translateX(-5px);
-        }
-        80% {
-            transform: translateX(5px);
+        50% {
+            color: var(--color-accent)
         }
         100% {
-            transform: translateX(0);
+          color: var(--color-background);
         }
-    }
+      }
 
     /* Aplicar animación de vibración al hacer hover sobre las ofertas */
-    .oferta:hover {
-        animation: vibrar 0.3s ;    
+    .offert:hover {
+        animation: vibrar 0.3s ;  
+        animation: cambiaColor 2s linear infinite alternate;  
+        opacity: 1;
     }
     /* Estilos para el footer */
     .modern-footer {
         background-color: var(--color-accent);
-        opacity: .8;
+        opacity: .8;        
         color: #fff;
         padding: 20px 0;
         text-align: center;
