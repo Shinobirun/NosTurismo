@@ -6,10 +6,12 @@
         --color-background: #579df7;
     }
 
+ 
+
     /* Establecer una imagen de fondo */
     body {
 
-        font-family: Arial, sans-serif;
+        font-family: 'Roboto', sans-serif;
         margin: 0;
         padding: 0;
         background-image: url('../images/playaMuelle.jpg');
@@ -32,7 +34,8 @@
 
     .logo {
         text-align: left; /* Alinea el logo a la izquierda */
-        padding-left: 10%   ;
+        padding-left: 10% ;
+        
     }
 
     nav {
@@ -66,18 +69,19 @@
     }
 
     li a img{
-        height: 20px;
+        height: 30px;
     }
 
     /* Estilos para la sección de inicio (banner) */
     .banner {
         text-align: center;
         padding: 100px 0;
+        
     }
 
     .banner img {
         max-width: 100%;
-        height: auto;
+        height: 300px;
     }
 
     /* Estilos para la sección de ofertas */
@@ -87,24 +91,25 @@
     }
 
     .offert {
-        /*background-color: var(--color-primary);
-        */background: rgb(23,70,162);
+        /*background-color: var(--color-primary);*/
+        background: rgb(23,70,162);
         background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 35%, var(--color-background) 100%);
-        color: var(--color-primary);
-        animation: cambiaColor 3s linear infinite alternate;
+        color: #fff;
         padding: 20px;
         margin: 20px;
         border-radius: 10px;
         display: inline-block;
         width: calc(33.33% - 40px);
-        /*Paraquehaya3columnasenpantallagrande*/opacity: .8;
-        -webkit-animation: cambiaColor 3s linear infinite alternate;
+        opacity: .8;
+        
 }
 
     .offert h3 {
         font-size: 1.5rem;
         margin: 10px 0;
-    }
+        animation: cambiaColor 3s linear infinite alternate;
+        -webkit-animation: cambiaColor 3s linear infinite alternate;
+}
 
     .offert p {
         font-size: 1rem;
@@ -123,8 +128,8 @@
         
     }
 
-   
-
+    /* Estilos para la sección de ofertas */
+ 
    
 
     .offert img {
@@ -136,20 +141,21 @@
 
     @keyframes cambiaColor {
         0% {
-          color: var(--color-primary);
+          color:#0404ff;
         }
+
         50% {
-            color: var(--color-accent)
+            color:#fdfdf8
         }
+       
         100% {
-          color: var(--color-background);
+          color:#0f0102;
         }
       }
 
     /* Aplicar animación de vibración al hacer hover sobre las ofertas */
     .offert:hover {
-        animation: vibrar 0.3s ;  
-        animation: cambiaColor 2s linear infinite alternate;  
+        animation: vibrar 0.3s ;   
         opacity: 1;
     }
     /* Estilos para el footer */

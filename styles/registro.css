@@ -147,7 +147,8 @@
     button[type="submit"] {
         grid-column: span 2; /* Este botón ocupará dos columnas */
         background-color: var(--color-primary);
-        color: #ffff
+        color: #ffffff; 
+        height: 30px;  
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -161,7 +162,7 @@
     .modern-footer {
         background-color: var(--color-accent);
         opacity: .8;        
-        color: #fff;
+        color: #ffff;
         padding: 20px 0;
         text-align: center;
     }
