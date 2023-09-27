@@ -1,9 +1,14 @@
-    :root {
-        --color-primary: #1746a2;
-        --color-secondary: #Ff731d;
-        --color-accent: #bbb737f8;
-        --color-background: #579df7;
-    }
+:root {
+    --color-primary: #1746a2;
+    --color-secondary: #Ff731d;
+    --color-accent: #bbb737f8;
+    --color-background: #579df7;
+    --color-text1:#ffffff;
+    --color-text2:#072566;
+    --color-border1:#ccc;
+    --color-backForm1:#ffffffcc;
+    --color-shadowForm1:#00000033;
+}   
 
     /* Establecer una imagen de fondo */
     body {
@@ -12,8 +17,8 @@
         margin: 0;
         padding: 0;
         background-image: url('../images/playaMuelle.jpg');
-        background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-        background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+        background-size: cover; 
+        background-attachment: fixed; 
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -22,8 +27,8 @@
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto; /* Divide el espacio en dos columnas, una para el logo y otra para el menú */
-        align-items: center; /* Centra verticalmente los elementos en el header */
+        grid-template-columns: 1fr auto; 
+        align-items: center;
         background-color: var(--color-accent);
         opacity: 1;
         padding: 10px 0;
@@ -34,13 +39,13 @@
     }
 
     .logo {
-        text-align: left; /* Alinea el logo a la izquierda */
+        text-align: left; 
         padding-left: 10%   ;
         
     }
 
     nav {
-        text-align: right; /* Alinea el menú a la derecha */
+        text-align: right; 
     }
 
     ul {
@@ -51,20 +56,20 @@
 
     li {
         display: inline;
-        margin-right: 20px; /* Espacio entre elementos del menú */
+        margin-right: 20px; 
         
     }
 
     a {
         text-decoration: none;
-        color: var(--color-primary); /* Color del texto del menú */
+        color: var(--color-primary); 
         font-weight: bold;
         
     }
 
     a:hover {
         text-decoration: none;
-        color: var(--color-secondary); /* Color del texto del menú */
+        color: var(--color-secondary); 
         font-weight: bold;
 
     }
@@ -80,21 +85,21 @@
     }
 
     main {
-        flex: 1; /* Cambiamos a flex para ocupar todo el espacio vertical */
+        flex: 1; 
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 50px; /* Agregamos un poco de espacio arriba del formulario */
+        margin-top: 50px; 
     }
 
     .formulario {
-        background: rgba(255, 255, 255, 0.8); /* Cambié la opacidad del fondo para que sea más sutil */
+        background: #ffffffcc; 
         padding: 40px;
         border-radius: 8px;
         text-align: center;
-        max-width: 400px; /* Limitamos el ancho del formulario para que no se extienda demasiado */
-        width: 100%; /* Aseguramos que el formulario ocupe el 100% del espacio disponible */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadí una sombra suave para resaltar el formulario */
+        max-width: 400px;
+        width: 100%; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     }
     
     .campo {
@@ -172,20 +177,20 @@
       }
       
       .icon {
-        margin-right: 5px; /* Espacio entre el icono y el texto */
-        font-size: 1.2em; /* Tamaño del icono */
+        margin-right: 5px; 
+        font-size: 1.2em; 
       }
       
       .copy-right {
         display: flex;
-        justify-content: center; /* Esto centra horizontalmente el contenido */
+        justify-content: center; 
         align-items: center;
-        margin-top: 5px; /* Añade espacio entre el contenido y el borde superior del footer */
+        margin-top: 5px; 
       }
       
       a img, p img {
         vertical-align: middle;
-        margin-bottom: 4px; /* Ajusta este valor según sea necesario */
+        margin-bottom: 4px; 
       }
       
       img {

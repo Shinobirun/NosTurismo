@@ -4,8 +4,12 @@
         --color-secondary: #Ff731d;
         --color-accent: #bbb737f8;
         --color-background: #579df7;
-    }
-
+        --color-text1:#ffffff;
+        --color-text2:#072566;
+        --color-border1:#ccc;
+        --color-backForm1:#ffffffcc;
+        --color-shadowForm1:#00000033;
+    }   
  
 
     /* Establecer una imagen de fondo */
@@ -15,14 +19,14 @@
         margin: 0;
         padding: 0;
         background-image: url('../images/playaMuelle.jpg');
-        background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-        background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+        background-size: cover; 
+        background-attachment: fixed; 
     }
 
     header {
         display: grid;
-        grid-template-columns: 1fr auto; /* Divide el espacio en dos columnas, una para el logo y otra para el menú */
-        align-items: center; /* Centra verticalmente los elementos en el header */
+        grid-template-columns: 1fr auto; 
+        align-items: center; 
         background-color: var(--color-accent);
         opacity: 1;
         padding: 10px 0;
@@ -33,13 +37,13 @@
     }
 
     .logo {
-        text-align: left; /* Alinea el logo a la izquierda */
+        text-align: left; 
         padding-left: 10% ;
         
     }
 
     nav {
-        text-align: right; /* Alinea el menú a la derecha */
+        text-align: right; 
     }
 
     ul {
@@ -50,20 +54,20 @@
 
     li {
         display: inline;
-        margin-right: 20px; /* Espacio entre elementos del menú */
+        margin-right: 20px; 
         
     }
 
     a {
         text-decoration: none;
-        color: var(--color-primary); /* Color del texto del menú */
+        color: var(--color-primary); 
         font-weight: bold;
         
     }
 
     a:hover {
         text-decoration: none;
-        color: var(--color-secondary); /* Color del texto del menú */
+        color: var(--color-secondary);
         font-weight: bold;
 
     }
@@ -123,7 +127,7 @@
         }
 
         .logo img {
-            max-width: 100px; /* Tamaño máximo del logo en píxeles */
+            max-width: 100px; 
             height: auto;
             
         }
@@ -133,10 +137,10 @@
        
 
         .offert img {
-            max-width: 100%; /* Ajusta el ancho máximo al 100% para que todas las imágenes se redimensionen automáticamente */
-            height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-            width: 100%; /* Añade esto para asegurarte de que el ancho sea del 100% del contenedor */
-            max-height: 200px; /* Establece la altura máxima deseada en píxeles */
+            max-width: 100%; 
+            height: auto; 
+            width: 100%; 
+            max-height: 200px; 
         }
 
         @keyframes cambiaColor {
@@ -163,7 +167,7 @@
             opacity: .7;
             color: var(--color-primary);
             padding: 10px 5px;
-            padding-left: 5%; /* Espacio a la izquierda */
+            padding-left: 5%; 
             padding-right: 5%;  
           }
           
@@ -189,20 +193,20 @@
           }
           
           .icon {
-            margin-right: 5px; /* Espacio entre el icono y el texto */
-            font-size: 1.2em; /* Tamaño del icono */
+            margin-right: 5px; 
+            font-size: 1.2em; 
           }
           
           .copy-right {
             display: flex;
-            justify-content: center; /* Esto centra horizontalmente el contenido */
+            justify-content: center; 
             align-items: center;
-            margin-top: 5px; /* Añade espacio entre el contenido y el borde superior del footer */
+            margin-top: 5px; 
           }
           
           a img, p img {
             vertical-align: middle;
-            margin-bottom: 4px; /* Ajusta este valor según sea necesario */
+            margin-bottom: 4px; 
           }
           
           img {
