@@ -158,47 +158,54 @@
             animation: vibrar 0.3s ;   
             opacity: 1;
         }
-        /* Estilos para el footer */
-        .modern-footer {
+        footer {
             background-color: var(--color-accent);
-            opacity: .8;        
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-    .footer-content {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .contact-info, .social-links {
-        flex: 1;
-        margin: 10px;
-    }
-
-    .contact-info h3, .social-links h3 {
-        font-size: 1.2rem;
-    }
-
-    .contact-info p, .social-links a {
-        font-size: 1rem;
-        margin: 5px 0;
-    }
-
-    .contact-info i, .social-links i {
-        margin-right: 5px;
-    }
-
-    .social-links a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    .social-links a:hover {
-        text-decoration: underline;
-    }
-
-
-
-
+            opacity: .7;
+            color: var(--color-primary);
+            padding: 10px 5px;
+            padding-left: 5%; /* Espacio a la izquierda */
+            padding-right: 5%;  
+          }
+          
+          .foot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          
+          ul li {
+            margin-bottom: 10px;
+          }
+          
+          a {
+            text-decoration: none;
+            color: var(--color-primary);
+            opacity: 1;
+          }
+          
+          .icon {
+            margin-right: 5px; /* Espacio entre el icono y el texto */
+            font-size: 1.2em; /* Tamaño del icono */
+          }
+          
+          .copy-right {
+            display: flex;
+            justify-content: center; /* Esto centra horizontalmente el contenido */
+            align-items: center;
+            margin-top: 5px; /* Añade espacio entre el contenido y el borde superior del footer */
+          }
+          
+          a img, p img {
+            vertical-align: middle;
+            margin-bottom: 4px; /* Ajusta este valor según sea necesario */
+          }
+          
+          img {
+            height: 25px;
+           
+          }
