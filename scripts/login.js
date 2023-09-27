@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
    
 
-        document.getElementById('closeButton').addEventListener('click', function() {
-            window.location.href = 'index.html';
-        });
+    document.getElementById('closeButton').addEventListener('click', function() {
+        document.querySelector('.modal').style.display = 'none';
+        window.location.href = '../index.html';
+    });
     });

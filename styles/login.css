@@ -88,11 +88,13 @@
     
 
     .formulario {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.8); /* Cambié la opacidad del fondo para que sea más sutil */
         padding: 20px;
         border-radius: 8px;
         text-align: center;
-        opacity: .8;
+        max-width: 400px; /* Limitamos el ancho del formulario para que no se extienda demasiado */
+        width: 100%; /* Aseguramos que el formulario ocupe el 100% del espacio disponible */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadí una sombra suave para resaltar el formulario */
     }
     
     .campo {
