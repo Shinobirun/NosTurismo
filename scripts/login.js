@@ -1,17 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var mostrarModal = false;
-  
-    document.getElementById('loginButton').addEventListener('click', function() {
-        // Agregar la lógica para autenticar al usuario
-        // enviar una solicitud POST a tu backend
-        // y manejar la respuesta
-        alert('Iniciando sesión...');
-    });
-  
-   
+    var formulario = document.querySelector('.formulario form');
 
-    document.getElementById('closeButton').addEventListener('click', function() {
-        document.querySelector('.modal').style.display = 'none';
+    formulario.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var ventanaEmergente = document.createElement('div');
+        ventanaEmergente.className = 'ventana-emergente';
+        ventanaEmergente.innerText = 'Usuario logueándose';
+        document.body.appendChild(ventanaEmergente);
+
+        setTimeout(function() {
+            ventanaEmergente.remove();
+        }, 5000);
+    });
+
+    var closeButton = document.getElementById('closeButton');
+
+    closeButton.addEventListener('click', function() {
         window.location.href = '../index.html';
     });
-    });
+});
