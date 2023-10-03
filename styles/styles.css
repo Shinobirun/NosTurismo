@@ -215,30 +215,13 @@
             height: 25px;
            
           }
-  /* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  header {
-    padding: 5px 0;
-  }
 
-  .banner {
-    padding: 50px 0;
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .offert {
-    width: 100%;
-  }
-}
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 768px) {
   header {
     padding: 5px 0;
   }
-
- 
 
   .offert {
     width: 100%;
@@ -251,8 +234,6 @@
     padding: 10px 0;
   }
 
-
-
   .offert {
     width: calc(50% - 40px);
   }
@@ -264,8 +245,7 @@
     padding: 15px 0;
   }
 
- 
-  .offert {
+   .offert {
     width: calc(33.33% - 40px);
   }
 }
