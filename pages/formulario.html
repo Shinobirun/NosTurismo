@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="../favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Nosotros - Agencia de Turismo</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/logo5.png" alt="Logo de Nosotros" class="img-logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html"><img src="../images/icons/travelling_2060284.png" alt="Inicio"> Inicio</a></li>
+                <li><a href="#"><img src="../images/icons/map_1934285.png" alt="Tours"> Tours</a></li>
+                <li><a href="./contacto.html"><img src="../images/icons/reception_1934306.png" alt="Contacto"> Contacto</a></li>
+                <li><a href="../pages/registro.html"><img src="../images/icons/rating_1934299.png" alt="Registrarse"> Registrarse</a></li>
+                <li><a href="./login.html"><img src="../images/icons/luggage_1934282.png" alt="Iniciar sesión"> Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <div style="margin:20px; padding: 20px;">
+            <h1 align="center">FORMULARIO DE SOLICITUD DE PRESUPUESTO</h1>
+            <br>
+                <p>Llene todos los campos solicitados y en el plazo de 24hs recibirá su cotización.</p>
+                <p>Muchas gracias por elegirnos.</p>
+        </div>  
+        
+        <div style="margin:20px; padding: 20px; color:white">
+            <label for="Cotizacion"> Solicitud Presupuesto N°</label>
+            <input type="number" id="cotizacion" name="cotizacion" value="1">
+        </div>
+        
+        <div style="margin:20px; padding: 30px; color:white">
+            <form action="procesar.php">
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="Nombre">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" value="Apellido"><br><br>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" value="e-mail">
+                <br>
+                <br>
+                <label for="phone">Número de Teléfono:</label><br><br>
+                <input type="tel" id="phone" name="phone" placeholder="11-5997-8088" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                <small>Formato: código de área - número</small><br><br>
+        
+        <div>
+            <table style="margin: 20px; padding: 20px; border-spacing: 30px; color:white"">
+           
+                <tr>
+                   <td colspan="3"><h2>ELIJA EL TOUR AL QUE DESEA PRESUPUESTAR</h2></td>
+                </tr>
+                <tr>
+                    <td>
+                    <h3>TOUR DE PESCA</h3>
+            <form>
+                <input type="radio" id="Miami" name="fav_language" value="Miami">
+                <label for="Miami">Miami</label><br>
+                <input type="radio" id="Samana" name="fav_language" value="Samana">
+                <label for="Samana">Samaná</label><br>
+                <input type="radio" id="Bermudas" name="fav_language" value="Bermudas">
+                <label for="Bermudas">Bermudas</label><br>
+                <input type="radio" id="Seychelles" name="fav_language" value="Seychelles">
+                <label for="Seychelles">Seychelles</label><br>
+            </form>
+            </td>
+            
+            <td>
+                <h3>TOUR DE AVENTURA-1</h3>
+                <form>
+                    <input type="radio" id="Safari" name="fav_language" value="Safari">
+                    <label for="Safari">Safari F. Africa</label><br>
+                    <input type="radio" id="cenote" name="fav_language" value="cenote">
+                    <label for="cenote">Cenote XX Yucatán</label><br>
+                    <input type="radio" id="Cueva" name="fav_language" value="Cueva">
+                    <label for="Cueva">Cueva de Los Cristales</label><br>
+                    <input type="radio" id="azules" name="fav_language" value="azules">
+                    <label for="azules">La Isla de las Cuevas Azules</label><br>
+                </form>
+            </td>
+            <td>
+                <h3>TOUR DE AVENTURA-2</h3>
+                <form>
+                    <input type="radio" id="egipto" name="fav_language" value="egipto">
+                    <label for="egipto">Egipto</label><br>
+                    <input type="radio" id="Everest" name="fav_language" value="Everest">
+                    <label for="Everest">Everest</label><br>
+                    <input type="radio" id="China" name="fav_language" value="China">
+                    <label for="China">China</label><br>
+                    <input type="radio" id="India" name="fav_language" value="India">
+                    <label for="India">India</label><br>
+                </form>
+            </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h3>TOUR DE PLAYAS</h3>
+                <form>
+                    <input type="radio" id="playa1" name="fav_language" value="playa1">
+                    <label for="playa1">Playa del Amor - México</label><br>
+                    <input type="radio" id="playa2" name="fav_language" value="playa2">
+                    <label for="playa2">One Foot Island - Islas Cook</label><br>
+                    <input type="radio" id="playa3" name="fav_language" value="playa3">
+                    <label for="playa3">Shell Beach - Australia</label><br>
+                    <input type="radio" id="playa4" name="fav_language" value="playa4">
+                    <label for="playa4">Playa Papakōlea - Hawái</label><br>
+                </form>
+                </td>
+                <td>
+                    <h3>TOUR RELAX</h3>
+                <form>
+                    <input type="radio" id="relax1" name="fav_language" value="relax1">
+                    <label for="relax1">Islas Maldvias</label><br>
+                    <input type="radio" id="relax2" name="fav_language" value="relax2">
+                    <label for="relax2">Bali - Indonesia</label><br>
+                    <input type="radio" id="relax3" name="fav_language" value="relax3">
+                    <label for="relax3">Costa Amalfitana - Italia</label><br>
+                    <input type="radio" id="relax4" name="fav_language" value="relax4">
+                    <label for="relax4">Playa Paradisíaca - Tailandia</label><br>
+                </form>
+                </td>
+                <td>
+                    <h3>TOUR ROMANTICO</h3>
+                <form>
+                    <input type="radio" id="romance1" name="fav_language" value="romance1">
+                    <label for="romance1">Escapada a París</label><br>
+                    <input type="radio" id="romance2" name="fav_language" value="romance2">
+                    <label for="romance2">Aventuras en Santorini</label><br>
+                    <input type="radio" id="romance3" name="fav_language" value="romance3">
+                    <label for="romance3">Experiencia Tropical - Bora-Bora</label><br>
+                    <input type="radio" id="romance4" name="fav_language" value="romance4">
+                    <label for="romance4">Noches de Encanto en Praga</label><br>
+                </form>
+                </td>
+            </tr>
+            
+            </table>
+        </div>
+        <div>
+        <form action="/action_page.php">
+            <label for="salida">Ingrese fecha de salida:</label>
+            <input type="date" id="salida" name="salida">
+        </form>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>SI LO DESEA PUEDE DEJARNOS UN COMENTARIO</h3>
+            <textarea name="message" style="width:200px; height:100px;">
+                Mensaje
+                </textarea>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="foot">
+          <div>
+            <h3 class="title">¡Síguenos en las redes sociales!</h3>
+            <p>Descubre las mejores ofertas y destinos.</p>
+            <ul>
+              <li>
+                <a href="#"><img src="../images/icons/fac.png" alt="Facebook">  Facebook</a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/icons/twit.png" alt="Twitter">  Twitter</a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/icons/inst.png" alt="Intagram">  Instagram</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="title">Contacto</h3>
+            <p>
+              <img src="../images/icons/phone.png" alt="Telefono"> Teléfono: 123-456-789
+            </p>
+            <p>
+              <img src="../images/icons/mail.png" alt="Mail"> Correo electrónico: info@tudominio.com
+            </p>
+          </div>
+        </div>
+        <div class="copy-right">
+          <p>&copy; 2023 Nosotros Turismo. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    
+        <script src="../NosTurismo/pages/index.js"></script>
+        </body>
+        </html>
