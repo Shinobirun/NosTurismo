@@ -197,3 +197,48 @@
         height: 25px;
        
       }
+      
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    header {
+        padding: 5px 0;
+    }
+
+    main {
+        margin-top: 20px;
+    }
+
+    .formulario {
+        max-width: 100%;
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 10px 0;
+    }
+
+    main {
+        margin-top: 30px;
+    }
+
+    .formulario {
+        max-width: 80%;
+    }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1025px) {
+    header {
+        padding: 15px 0;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    .formulario {
+        max-width: 500px; 
+    }
+}

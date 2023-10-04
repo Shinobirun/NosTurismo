@@ -11,7 +11,7 @@
         --color-shadowForm1:#00000033;
     }   
  
-
+    
     /* Establecer una imagen de fondo */
     body {
 
@@ -77,10 +77,11 @@
     }
 
     /* Estilos para la sección de inicio (banner) */
-    .banner {
-        text-align: center;
-        padding: 100px 0;
+    .banner  {
         
+        text-align: center;
+        padding: 100px 0;   
+       
     }
 
     .banner img {
@@ -108,7 +109,8 @@
             
     }
 
-        .offert h3 {
+            
+            .offert h3 {
             font-size: 1.5rem;
             margin: 10px 0;
             animation: cambiaColor 3s linear infinite alternate;
@@ -213,3 +215,37 @@
             height: 25px;
            
           }
+
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    padding: 5px 0;
+  }
+
+  .offert {
+    width: 100%;
+  }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 10px 0;
+  }
+
+  .offert {
+    width: calc(50% - 40px);
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1025px) {
+  header {
+    padding: 15px 0;
+  }
+
+   .offert {
+    width: calc(33.33% - 40px);
+  }
+}
