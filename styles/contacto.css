@@ -22,6 +22,7 @@ body {
   min-height: 100vh;
 }
 
+
 header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -75,8 +76,12 @@ img {
   height: 100px;
 }
 
+main {
+  flex-grow: 1; 
+}
+
 .contenedor {
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -85,14 +90,22 @@ img {
 .formulario {
   background-color: var(--color-backForm1);
   color: var(--color-text1);
-  width: 80%;
+  
   padding: 30px;
-  margin-bottom: 20px;
+  
+  
+
+}
+
+.formulario, .iframe {
+  width: 80%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
 }
 
 .iframe {
   background-color: var(--color-backForm1);
-  width: 98.5%;
+  
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -159,7 +172,8 @@ footer {
   padding: 10px 5px;
   padding-left: 5%;
   padding-right: 5%;
-  margin-top: auto;
+  margin-top: 50px; /* Añade esta línea */
+  margin-top: 20px; /
 }
 
 .foot {
