@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/registro.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="../favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <title>Nosotros - Agencia de Turismo</title>
+    
+    <title>PRESUPUESTO</title>
+
+   
 </head>
 <body>
     <header>
@@ -25,142 +28,108 @@
         </nav>
         
     </header>
+
     <main>
-        <div style="margin:20px; padding: 20px;">
-            <h1 align="center">FORMULARIO DE SOLICITUD DE PRESUPUESTO</h1>
-            <br>
-                <p>Llene todos los campos solicitados y en el plazo de 24hs recibirá su cotización.</p>
-                <p>Muchas gracias por elegirnos.</p>
-        </div>  
+        <div class="registration-container">
+            <div class="registration-form">
+                <h2>SOLICITUD DE PRESUPUESTO</h2>
+                <div style="margin:20px; padding: 20px; color:rgb(14, 13, 13)">
+                  <label for="Cotizacion">Presupuesto N°</label>
+                  <input type="number" id="cotizacion" name="cotizacion" value="1">
+              </div>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
         
-        <div style="margin:20px; padding: 20px; color:white">
-            <label for="Cotizacion"> Solicitud Presupuesto N°</label>
-            <input type="number" id="cotizacion" name="cotizacion" value="1">
-        </div>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
         
-        <div style="margin:20px; padding: 30px; color:white">
-            <form action="procesar.php">
-                
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" value="Nombre">
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="Apellido" name="Apellido" value="Apellido"><br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" value="e-mail">
-                <br>
-                <br>
-                <label for="phone">Número de Teléfono:</label><br><br>
-                <input type="tel" id="phone" name="phone" placeholder="11-5997-8088" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
-                <small>Formato: código de área - número</small><br><br>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
         
-        <div>
-            <table style="margin: 20px; padding: 20px; border-spacing: 30px; color:white"">
-           
-                <tr>
-                   <td colspan="3"><h2>ELIJA EL TOUR AL QUE DESEA PRESUPUESTAR</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                    <h3>TOUR DE PESCA</h3>
-            <form>
-                <input type="radio" id="Miami" name="fav_language" value="Miami">
-                <label for="Miami">Miami</label><br>
-                <input type="radio" id="Samana" name="fav_language" value="Samana">
-                <label for="Samana">Samaná</label><br>
-                <input type="radio" id="Bermudas" name="fav_language" value="Bermudas">
-                <label for="Bermudas">Bermudas</label><br>
-                <input type="radio" id="Seychelles" name="fav_language" value="Seychelles">
-                <label for="Seychelles">Seychelles</label><br>
-            </form>
-            </td>
+                    <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="11-5997-8088" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+
+                <p>Selecciona el paquete a presupuestar:</p>
+    <select id="paquetes">
+        <option value="Aventura">Aventura</option>
+                                <ul>
+                                  <option><li>  - Suiza</li></option>
+                                  <option><li>  - Toscana</li></option>
+                                  <option><li>  - Kioto</li></option>
+                                  <option><li>  - Austria</li></option>
+                                </ul><br>
+        
+        <option value="Aventura Plus">Aventura Plus</option>
+                                  <ul>
+                                    <option><li>  - Yucatán</li></option>
+                                    <option><li>  - Buceo</li></option>
+                                    <option><li>  - Safari</li></option>
+                                    <option><li>  - Escalada</li></option>
+                                    <option>
+                                  </ul><br>
+        
+        <option value="Relax">Reláx</option>
+                                  <ul>
+                                    <option><li>  - Maldivas</li></option>
+                                    <option><li>  - Indonesia</li></option>
+                                    <option><li>  - Italia</li></option>
+                                    <option><li>  - Tailandia</li></option>
+                                  </ul><br>
+        
+        <option value="Romantico">Romántico</option>
+                                  <ul>
+                                    <option><li>  - París</li></option>
+                                    <option><li>  - Santorini</li></option>
+                                    <option><li>  - Bora-Bora</li></option>
+                                    <option><li>  - Praga</li></option>
+                                  </ul><br>
+        
+        <option value="Playas">Playas</option>
+                                  <ul>
+                                    <option><li>  - Colombia</li></option>
+                                    <option><li>  - México</li></option>
+                                    <option><li>  - Portugal</li></option>
+                                    <option><li>  - Islas Galápagos</li></option>
+                                  </ul><br>
+
+        <option value="Pesca">Pesca</option>
+                                  <ul>
+                                    <option><li>  - Miami</li></option>
+                                    <option><li>  - Samaná</li></option>
+                                    <option><li>  - Bermudas</li></option>
+                                    <option><li>  - Seychelles</li></option>
+                                  </ul>
+        
+    </select>
+    <p>Has seleccionado: <span id="resultado"></span></p>
+
+    <div>
+      <form action="/action_page.php">
+          <label for="salida">Ingrese fecha de salida:</label>
+          <input type="date" id="salida" name="salida">
+      </form>
+      </div>
+      <br>
+      <br>
+      <div>
+          <h4>SI LO DESEA PUEDE DEJARNOS UN COMENTARIO</h4>
+          <textarea name="message" style="width:200px; height:100px;">
+              Mensaje
+              </textarea>
+      </div>
+        
+                    <button type="submit">ENVIAR SOLICITUD</button>
+                </form>
+            </div>
             
-            <td>
-                <h3>TOUR DE AVENTURA-1</h3>
-                <form>
-                    <input type="radio" id="Safari" name="fav_language" value="Safari">
-                    <label for="Safari">Safari F. Africa</label><br>
-                    <input type="radio" id="cenote" name="fav_language" value="cenote">
-                    <label for="cenote">Cenote XX Yucatán</label><br>
-                    <input type="radio" id="Cueva" name="fav_language" value="Cueva">
-                    <label for="Cueva">Cueva de Los Cristales</label><br>
-                    <input type="radio" id="azules" name="fav_language" value="azules">
-                    <label for="azules">La Isla de las Cuevas Azules</label><br>
-                </form>
-            </td>
-            <td>
-                <h3>TOUR DE AVENTURA-2</h3>
-                <form>
-                    <input type="radio" id="egipto" name="fav_language" value="egipto">
-                    <label for="egipto">Egipto</label><br>
-                    <input type="radio" id="Everest" name="fav_language" value="Everest">
-                    <label for="Everest">Everest</label><br>
-                    <input type="radio" id="China" name="fav_language" value="China">
-                    <label for="China">China</label><br>
-                    <input type="radio" id="India" name="fav_language" value="India">
-                    <label for="India">India</label><br>
-                </form>
-            </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <h3>TOUR DE PLAYAS</h3>
-                <form>
-                    <input type="radio" id="playa1" name="fav_language" value="playa1">
-                    <label for="playa1">Playa del Amor - México</label><br>
-                    <input type="radio" id="playa2" name="fav_language" value="playa2">
-                    <label for="playa2">One Foot Island - Islas Cook</label><br>
-                    <input type="radio" id="playa3" name="fav_language" value="playa3">
-                    <label for="playa3">Shell Beach - Australia</label><br>
-                    <input type="radio" id="playa4" name="fav_language" value="playa4">
-                    <label for="playa4">Playa Papakōlea - Hawái</label><br>
-                </form>
-                </td>
-                <td>
-                    <h3>TOUR RELAX</h3>
-                <form>
-                    <input type="radio" id="relax1" name="fav_language" value="relax1">
-                    <label for="relax1">Islas Maldvias</label><br>
-                    <input type="radio" id="relax2" name="fav_language" value="relax2">
-                    <label for="relax2">Bali - Indonesia</label><br>
-                    <input type="radio" id="relax3" name="fav_language" value="relax3">
-                    <label for="relax3">Costa Amalfitana - Italia</label><br>
-                    <input type="radio" id="relax4" name="fav_language" value="relax4">
-                    <label for="relax4">Playa Paradisíaca - Tailandia</label><br>
-                </form>
-                </td>
-                <td>
-                    <h3>TOUR ROMANTICO</h3>
-                <form>
-                    <input type="radio" id="romance1" name="fav_language" value="romance1">
-                    <label for="romance1">Escapada a París</label><br>
-                    <input type="radio" id="romance2" name="fav_language" value="romance2">
-                    <label for="romance2">Aventuras en Santorini</label><br>
-                    <input type="radio" id="romance3" name="fav_language" value="romance3">
-                    <label for="romance3">Experiencia Tropical - Bora-Bora</label><br>
-                    <input type="radio" id="romance4" name="fav_language" value="romance4">
-                    <label for="romance4">Noches de Encanto en Praga</label><br>
-                </form>
-                </td>
-            </tr>
-            
-            </table>
         </div>
-        <div>
-        <form action="/action_page.php">
-            <label for="salida">Ingrese fecha de salida:</label>
-            <input type="date" id="salida" name="salida">
-        </form>
-        </div>
-        <br>
-        <br>
-        <div>
-            <h3>SI LO DESEA PUEDE DEJARNOS UN COMENTARIO</h3>
-            <textarea name="message" style="width:200px; height:100px;">
-                Mensaje
-                </textarea>
-        </div>
-        
+       
+      
+      <!-- <div class="registration-image">
+          <img src="../images/registro/7ffe2401-f145-42bc-9665-c64136a16f5a.jpg" alt="Imagen presup">
+      </div> -->
+      
     </main>
 
     <footer>
@@ -193,8 +162,23 @@
         <div class="copy-right">
           <p>&copy; 2023 Nosotros Turismo. Todos los derechos reservados.</p>
         </div>
-      </footer>
+      </footer> 
+
+      <script>
+        // Obtener el elemento select y el elemento donde mostrar el resultado
+        var select = document.getElementById("paquetes");
+        var resultado = document.getElementById("resultado");
+
+        // Manejar el evento de cambio en el select
+        select.addEventListener("change", function () {
+            // Obtener el valor seleccionado
+            var valorSeleccionado = select.value;
+            
+            // Mostrar el valor seleccionado en el resultado
+            resultado.textContent = valorSeleccionado;
+        });
+    </script>
     
-        <script src="../NosTurismo/pages/index.js"></script>
-        </body>
-        </html>
+    <script src="script.js"></script>
+</body>
+</html>
