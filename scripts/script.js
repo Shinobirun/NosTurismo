@@ -13,14 +13,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-
-  const url = 'https://www.dolarhoy.com/api/api.php?type=valoresprincipales';
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      const dolarOficialCompra = data[0].casa.compra;
-      const dolarOficialVenta = data[0].casa.venta;
-      console.log(`Compra: ${dolarOficialCompra}, Venta: ${dolarOficialVenta}`);
-  })
-  .catch(error => console.error('Error:', error));
