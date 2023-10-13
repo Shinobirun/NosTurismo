@@ -1,20 +1,4 @@
-
 document.addEventListener('DOMContentLoaded', function() {
-    var avion = document.createElement('img');
-    avion.src = '../'; // Ruta a la imagen del avión
-    avion.className = 'avion';
-    document.body.appendChild(avion);
-  
-    document.addEventListener('mousemove', function(e) {
-      var x = e.clientX;
-      var y = e.clientY;
-      avion.style.left = x + 'px';
-      avion.style.top = y + 'px';
-    });
-  });
-
-
-  document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navHamburguer = document.querySelector('.nav-hamburguer');
 
@@ -29,22 +13,25 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// api dolar hoy
+// api clima
 
 document.addEventListener('DOMContentLoaded', function() {
-  const dolarValueElement = document.getElementById('dolar-value');
+  const apiKey = '8e410967542fb95c076a2651cd434e0f';
+  const ciudad = 'Buenos Aires';
 
-  // Realizar la solicitud a la API de Dólar Hoy
-  fetch('https://www.dolarhoy.com/api.php')
+  const climaInfoElement = document.getElementById('clima-info');
+
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`)
       .then(response => response.json())
       .then(data => {
-          const dolarValue = data.venta; // Aquí puedes acceder al valor de compra, venta, etc.
-          dolarValueElement.innerText = `El valor del dólar en Argentina es: ${dolarValue}`;
-      })
-      .catch(error => {
-          console.error('Error al obtener el valor del dólar:', error);
-          dolarValueElement.innerText = 'No se pudo obtener el valor del dólar en este momento.';
-      });
-});
-  
+          if (data.main) {
+              const cityName = data.name;
+              const temperature = (data.main.temp - 273.15).toFixed(1); // Convertimos de Kelvin a Celsius y redondeamos a 1 decimal
 
+              climaInfoElement.innerHTML = `La temperatura en ${cityName} es ${temperature}°C`;
+          } else {
+              climaInfoElement.innerHTML = 'No se pudo obtener la información del clima.';
+          }
+      })
+      .catch(error => console.error('Error:', error));
+});
