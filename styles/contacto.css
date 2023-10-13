@@ -103,11 +103,13 @@ img{
     background-color: var(--color-backForm1);
     width: 98.5%;
     padding: 10px;
+    height: auto;
     
   }
   
   .iframe iframe {
     width: 100%;
+    height: auto;
     
   }
   
