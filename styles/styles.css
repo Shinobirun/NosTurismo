@@ -303,3 +303,13 @@
     width: calc(33.33% - 40px);
   }
 }
+
+/*clima*/
+
+#clima-info {
+  font-size: 3em; 
+  text-align: center;
+  height: 60vh; 
+  width: 100%; 
+  margin-top: 20px;
+}
