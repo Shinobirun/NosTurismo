@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+
   document.addEventListener('DOMContentLoaded', function() {
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const navHamburguer = document.querySelector('.nav-hamburguer');
@@ -46,3 +47,4 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 });
   
+

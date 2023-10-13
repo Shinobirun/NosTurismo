@@ -1,91 +1,98 @@
 :root {
-    --color-primary: #1746a2;
-    --color-secondary: #Ff731d;
-    --color-accent: #bbb737f8;
-    --color-background: #579df7;
-    --color-text1:#ffffff;
-    --color-text2:#072566;
-    --color-border1:#ccc;
-    --color-backForm1:#ffffffcc;
-    --color-shadowForm1:#00000033;
-}   
-
-/* Establecer una imagen de fondo */
-body {
-
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('../images/playaMuelle.jpg');
-    background-size: cover; /* Ajusta la imagen al tamaño del viewport */
-    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    
+  --color-primary: #1746a2;
+  --color-secondary: #Ff731d;
+  --color-accent: #bbb737f8;
+  --color-background: #579df7;
+  --color-text1: #ffffff;
+  --color-text2: #072566;
+  --color-border1: #ccc;
+  --color-backForm1: #ffffffcc;
+  --color-shadowForm1: #00000033;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/playaMuelle.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
 header {
-    display: grid;
-    grid-template-columns: 1fr auto; /* Divide el espacio en dos columnas, una para el logo y otra para el menú */
-    align-items: center; /* Centra verticalmente los elementos en el header */
-    background-color: var(--color-accent);
-    opacity: 1;
-    padding: 10px 0;
-}   
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background-color: var(--color-accent);
+  opacity: 1;
+  padding: 10px 0;
+}
 
 header:hover {
-    opacity: .9  ;
+  opacity: .9;
 }
 
 .logo {
-    text-align: left; /* Alinea el logo a la izquierda */
-    padding-left: 10%   ;
-    
+  text-align: left;
+  padding-left: 10%;
 }
 
 nav {
-    text-align: right; /* Alinea el menú a la derecha */
+  text-align: right;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    display: inline;
-    margin-right: 20px; /* Espacio entre elementos del menú */
-    
+  display: inline;
+  margin-right: 20px;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-primary); /* Color del texto del menú */
-    font-weight: bold;
-    
+  text-decoration: none;
+  color: var(--color-primary);
+  font-weight: bold;
 }
 
 a:hover {
-    text-decoration: none;
-    color: var(--color-secondary); /* Color del texto del menú */
-    font-weight: bold;
-
+  text-decoration: none;
+  color: var(--color-secondary);
+  font-weight: bold;
 }
 
-
-
-img{
-    height: 30px;
-}   
+img {
+  height: 30px;
+}
 
 .img-logo {
-    height: 100px;
+  height: 100px;
+}
+
+main {
+  flex-grow: 1; 
 }
 
 .contenedor {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.formulario {
+  background-color: var(--color-backForm1);
+  color: var(--color-text1);
   
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,100 +223,129 @@ img{
     vertical-align: middle;
     margin-bottom: 4px; 
   }
+
   
-  img {
-    height: 25px;
-   
-  } 
-  .copy-right {
-    display: flex;
-    justify-content: center; /* Esto centra horizontalmente el contenido */
-    align-items: center;
-    margin-top: 5px; /* Añade espacio entre el contenido y el borde superior del footer */
-  }
   
-  a img, p img {
-    vertical-align: middle;
-    margin-bottom: 4px; /* Ajusta este valor según sea necesario */
-  }
-  
-  img {
-    height: 25px;
-   
-  }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  header {
-      padding: 5px 0;
-  }
-
-  main {
-      margin-top: 20px;
-  }
-
-  .formulario {
-      width: 100%;
-      padding: 20px;
-  }
-
-  .iframe {
-      width: 100%;
-      padding: 5px;
-  }
-
-  .iframe iframe {
-      width: 100%;
-  }
 }
 
-/* Media query para pantallas medianas */
-@media (min-width: 769px) and (max-width: 1024px) {
-  header {
-      padding: 10px 0;
-  }
-
-  main {
-      margin-top: 30px;
-  }
-
-  .formulario {
-      width: 80%;
-      padding: 30px;
-  }
-
-  .iframe {
-      width: 100%;
-      padding: 10px;
-  }
-
-  .iframe iframe {
-      width: 100%;
-  }
+.formulario, .iframe {
+  width: 80%; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
 }
 
-/* Media query para pantallas grandes */
-@media (min-width: 1025px) {
-  header {
-      padding: 15px 0;
-  }
-
-  main {
-      margin-top: 50px;
-  }
-
-  .formulario {
-      width: 70%;
-      padding: 40px;
-  }
-
-  .iframe {
-      width: 100%;
-      padding: 15px;
-  }
-
-  .iframe iframe {
-      width: 100%;
-  }
+.iframe {
+  background-color: var(--color-backForm1);
+  
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
+.iframe iframe {
+  width: 100%;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text1);
+  height: 40px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+button:hover {
+  background-color: var(--color-secondary);
+}
+
+input:hover,
+textarea:hover {
+  filter: brightness(1.1);
+  color: var(--color-text1);
+  padding: 10px;
+  border: 1px solid var(--color-border1);
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: var(--color-accent);
+  opacity: .3;
+}
+
+input,
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  transition: filter 0.3s;
+  color: black;
+  opacity: 1;
+}
+
+h2 {
+  margin: 20px 0;
+  text-align: center;
+  color: var(--color-text2);
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp-button img {
+  width: 50px;
+}
+
+footer {
+  background-color: var(--color-accent);
+  opacity: .7;
+  color: var(--color-primary);
+  padding: 10px 5px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 50px; /* Añade esta línea */
+  margin-top: 20px; /
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+a img, p img {
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+img {
+  height: 25px;
+}
