@@ -135,3 +135,22 @@ S
     font-size: 3em; 
     text-align: center;
   }
+
+  /* Estilos para footer tablets */
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  ul li {
+    margin-bottom: 0; /* Eliminar el margen entre elementos de la lista */
+  }
+}
+
+/* Estilos para footer celulares */
+@media (max-width: 480px) {
+  footer {
+    padding: 10px;
+  }
+}
