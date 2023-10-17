@@ -108,6 +108,10 @@
   background-size: cover;
   background-attachment: fixed;
   margin-top: 50px; 
+  color: #ccc;
+  animation: cambiaColor 3s linear infinite alternate;
+  -webkit-animation: cambiaColor 3s linear infinite alternate;
+
 }
 
 .banner img {
